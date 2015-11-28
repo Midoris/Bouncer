@@ -13,6 +13,7 @@
 		06963EBF1C096E3F00D8A690 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06963EBE1C096E3F00D8A690 /* Images.xcassets */; };
 		06963EC21C096E3F00D8A690 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06963EC01C096E3F00D8A690 /* LaunchScreen.xib */; };
 		06963ECE1C096E3F00D8A690 /* BouncerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06963ECD1C096E3F00D8A690 /* BouncerTests.swift */; };
+		06963ED81C096E9100D8A690 /* BouncerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06963ED71C096E9100D8A690 /* BouncerBehavior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		06963EC71C096E3F00D8A690 /* BouncerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BouncerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06963ECC1C096E3F00D8A690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06963ECD1C096E3F00D8A690 /* BouncerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncerTests.swift; sourceTree = "<group>"; };
+		06963ED71C096E9100D8A690 /* BouncerBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncerBehavior.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		06963EB41C096E3F00D8A690 /* Bouncer */ = {
 			isa = PBXGroup;
 			children = (
+				06963ED71C096E9100D8A690 /* BouncerBehavior.swift */,
 				06963EB71C096E3F00D8A690 /* AppDelegate.swift */,
 				06963EB91C096E3F00D8A690 /* ViewController.swift */,
 				06963EBB1C096E3F00D8A690 /* Main.storyboard */,
@@ -214,6 +217,7 @@
 			files = (
 				06963EBA1C096E3F00D8A690 /* ViewController.swift in Sources */,
 				06963EB81C096E3F00D8A690 /* AppDelegate.swift in Sources */,
+				06963ED81C096E9100D8A690 /* BouncerBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
