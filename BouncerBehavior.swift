@@ -21,9 +21,12 @@ class BouncerBehavior: UIDynamicBehavior {
     lazy var blockBehavior: UIDynamicItemBehavior = {
         let lazilyCreatedblockBehavior = UIDynamicItemBehavior()
         lazilyCreatedblockBehavior.allowsRotation = true
-        lazilyCreatedblockBehavior.elasticity = 0.85
+        lazilyCreatedblockBehavior.elasticity = CGFloat(NSUserDefaults.standardUserDefaults().doubleForKey(Constants.ElasticityKey))
         lazilyCreatedblockBehavior.friction = 0
         lazilyCreatedblockBehavior.resistance = 0
+        NSNotificationCenter.defaultCenter().addObserverForName(NSUserDefaultsDidChangeNotification, object: nil, queue: nil) { (notification) -> Void in
+            lazilyCreatedblockBehavior.elasticity = CGFloat(NSUserDefaults.standardUserDefaults().doubleForKey(Constants.ElasticityKey))
+        }
         return lazilyCreatedblockBehavior
         
         }()
@@ -52,6 +55,10 @@ class BouncerBehavior: UIDynamicBehavior {
         collider.removeItem(block)
         blockBehavior.removeItem(block)
         block.removeFromSuperview()
+    }
+    
+    struct Constants {
+        static let ElasticityKey = "BouncerBehavior.Elasticity"
     }
 
    

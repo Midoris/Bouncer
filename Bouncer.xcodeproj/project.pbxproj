@@ -14,6 +14,7 @@
 		06963EC21C096E3F00D8A690 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06963EC01C096E3F00D8A690 /* LaunchScreen.xib */; };
 		06963ECE1C096E3F00D8A690 /* BouncerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06963ECD1C096E3F00D8A690 /* BouncerTests.swift */; };
 		06963ED81C096E9100D8A690 /* BouncerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06963ED71C096E9100D8A690 /* BouncerBehavior.swift */; };
+		06963EF81C1D566D00D8A690 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 06963EF71C1D566D00D8A690 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		06963ECC1C096E3F00D8A690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06963ECD1C096E3F00D8A690 /* BouncerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncerTests.swift; sourceTree = "<group>"; };
 		06963ED71C096E9100D8A690 /* BouncerBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncerBehavior.swift; sourceTree = SOURCE_ROOT; };
+		06963EF71C1D566D00D8A690 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				06963EB71C096E3F00D8A690 /* AppDelegate.swift */,
 				06963EB91C096E3F00D8A690 /* ViewController.swift */,
 				06963EBB1C096E3F00D8A690 /* Main.storyboard */,
+				06963EF71C1D566D00D8A690 /* Settings.bundle */,
 				06963EBE1C096E3F00D8A690 /* Images.xcassets */,
 				06963EC01C096E3F00D8A690 /* LaunchScreen.xib */,
 				06963EB51C096E3F00D8A690 /* Supporting Files */,
@@ -195,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06963EF81C1D566D00D8A690 /* Settings.bundle in Resources */,
 				06963EBD1C096E3F00D8A690 /* Main.storyboard in Resources */,
 				06963EC21C096E3F00D8A690 /* LaunchScreen.xib in Resources */,
 				06963EBF1C096E3F00D8A690 /* Images.xcassets in Resources */,
@@ -415,6 +419,7 @@
 				06963ED31C096E3F00D8A690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06963ED41C096E3F00D8A690 /* Build configuration list for PBXNativeTarget "BouncerTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				06963ED61C096E3F00D8A690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - Animation Behavior Setup
+    
     let bouncer = BouncerBehavior()
     lazy var animator: UIDynamicAnimator = { UIDynamicAnimator(referenceView: self.view) }()
     
@@ -18,11 +20,8 @@ class ViewController: UIViewController {
         animator.addBehavior(bouncer)
     }
     
-    struct Constants {
-        static let BlockSize = CGSize(width: 40, height: 40)
-    }
     
-    var redBlock: UIView?
+    // MARK: - View Controller Lifecycle
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -45,11 +44,19 @@ class ViewController: UIViewController {
         AppDelegate.Motion.Manager.stopAccelerometerUpdates()
     }
     
+    // MARK: - Blocks
+    
+    var redBlock: UIView?
+    
     func addBlock() -> UIView {
         let block = UIView(frame: CGRect(origin: CGPoint.zeroPoint, size: Constants.BlockSize))
         block.center = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
         view.addSubview(block)
         return block
+    }
+    
+    struct Constants {
+        static let BlockSize = CGSize(width: 40, height: 40)
     }
 
 }
